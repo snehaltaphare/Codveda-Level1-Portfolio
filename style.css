@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-blue: #3498db;
+    --dark-blue: #2c3e50;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { background-color: var(--bg-light); color: #333; }
+
+/* Navigation */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 10%; background: var(--white);
+}
+.logo { font-size: 1.5rem; font-weight: 700; color: #2c3e50; }
+.logo span { color: var(--primary-blue); }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 25px; }
+.nav-links a { text-decoration: none; color: #555; font-size: 0.9rem; font-weight: 500; }
+.nav-links a.active { color: var(--primary-blue); border-bottom: 2px solid var(--primary-blue); padding-bottom: 5px; }
+
+/* Hero Section - Exactly like Image */
+.hero {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    padding: 100px 20px; text-align: center; color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+.hero h1 span { color: #81ecec; }
+.hero p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 25px; }
+.btn-view {
+    background: #3498db; color: white; padding: 12px 35px;
+    border-radius: 50px; text-decoration: none; font-weight: 600;
+    display: inline-block; transition: 0.3s;
+}
+.btn-view:hover { background: #2980b9; transform: scale(1.05); }
+
+/* Section Titles */
+.section-title { text-align: center; margin: 60px 0 30px; font-size: 1.6rem; color: #2c3e50; }
+
+/* Technical Skills Pills */
+.skills-container { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 50px; }
+.skill-pill {
+    background: white; padding: 15px 35px; border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); color: var(--primary-blue);
+    font-weight: 700; font-size: 0.9rem;
+}
+
+/* Projects Card - High Quality */
+.project-card {
+    max-width: 700px; margin: 0 auto 80px; background: white;
+    padding: 40px; border-radius: 20px; text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+}
+.project-card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+.project-card p { color: #777; font-size: 0.95rem; margin-bottom: 25px; }
+.project-img {
+    width: 100%; max-width: 450px; border-radius: 15px;
+    margin-bottom: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer { background: #34495e; color: white; text-align: center; padding: 40px 0; font-size: 0.9rem; }
