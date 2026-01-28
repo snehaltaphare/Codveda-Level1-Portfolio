@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const name = document.getElementById('name').value;
             // Aapka screenshot wala alert message
-            alert(`Thank you, ${name}! Your message has been sent successfully to Codveda.`);
+            alert(`Thank you, Snehal Taphare! Your message has been sent successfully to Codveda.`);
             form.reset();
         });
     }
